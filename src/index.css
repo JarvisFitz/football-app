@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+tbody{
+  white-space: break-spaces;
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+  
+}
+
+table{
+  text-align: left;
+  white-space: break-spaces;
+  font-family: "Courier New", Courier, monospace;
+}
