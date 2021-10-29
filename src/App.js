@@ -1,17 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import { GetTeams } from './Apis/standings';
 import React, {useState} from 'react'
+import Table from './components/table';
 
 function App() {
   const [showTable, setShowTable] = useState(false);
-  GetTeams();
 
   return (
     <div className="App">
       <header className="App-header">
         <button onClick={() => setShowTable(!showTable)}>Show table</button>
-        { showTable && }
+        { showTable && <Table></Table>}
         <a
           className="App-link"
           href="https://reactjs.org"
