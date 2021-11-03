@@ -7,9 +7,9 @@ const url = 'http://api.football-data.org/v2/competitions/2021/standings';
 
 export default function FootballTable(){
     const [showTable, setShowTable] = useState(false);
-    return (<div className="divTble">
+    return (<div className="divTbl">
         <h1>Premier League Table page.</h1>
-        <button className="showTableBtn" onClick={() => setShowTable(!showTable)}>Show the Premier League table</button>
+        <button onClick={() => setShowTable(!showTable)}>Show the Premier League table</button>
         { showTable && <Table></Table>}
     </div>)
 
