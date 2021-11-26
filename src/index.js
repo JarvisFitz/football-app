@@ -8,8 +8,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from './Pages/home';
 import Error from './Pages/error';
 import NavBar from './Pages/navbar';
-import FootballTable from './Pages/table'
+import FootballTable from './Pages/LeagueView'
 import LoginPage from './Pages/login';
+import Leagues from './Pages/Leagues';
 
 
 const ReactRouter = () => {
@@ -24,6 +25,9 @@ const ReactRouter = () => {
       </Route>
       <Route exact path="/Login">
         <LoginPage />
+      </Route>
+      <Route exact path="/Leagues">
+        <Leagues />
       </Route>
       <Route path="*">
         <Error />
