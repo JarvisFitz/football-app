@@ -19,9 +19,10 @@ export default function FootballTable(){
             if(url !== newUrl)
             {
                 url=newUrl;
-                setShowTable(showTable);
+                setShowTable(!showTable);
             }
         }
+
         //<button onClick={() => setShowTable(!showTable)}>Show the table</button>
         //<select defaultChecked={setShowTable} onChange={(e) => handleSelectTable(e)} name="Leagues" id="Leagues">
         // <option onChange={() => handleSelectTable("2021")} value="2021">EPL</option>
